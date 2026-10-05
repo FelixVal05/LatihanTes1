@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
         val data = intent.getStringExtra(dataTerima)
         val _roleName = findViewById<TextView>(R.id.roleName)
         _roleName.text = data?:"Admin"
+
     }
 
     companion object{

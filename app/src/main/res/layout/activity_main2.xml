@@ -30,4 +30,5 @@
         android:text="Guest"
         android:layout_gravity="center">
     </Button>
+
 </LinearLayout>

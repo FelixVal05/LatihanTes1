@@ -51,6 +51,7 @@ class MainActivity2 : AppCompatActivity() {
             }
             startActivity(intentWithData)
         }
+
     }
 
 

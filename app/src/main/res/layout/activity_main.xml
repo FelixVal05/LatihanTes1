@@ -256,6 +256,105 @@
             </LinearLayout>
         </LinearLayout>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:layout_marginTop="24dp"
+            android:textColor="#D3D3D3"
+            android:textStyle="bold"
+            android:textSize="16dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/account_information_frame"
+            android:orientation="vertical"
+            android:padding="24dp">
 
+<!--            //Notification-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/notification_vector">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Push Notification"
+                        android:textColor="#D3D3D3"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="16dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receive alerts on your device"
+                        android:textColor="#D3D3D3"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="16dp">
+                    </TextView>
+                </LinearLayout>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true">
+                </androidx.appcompat.widget.SwitchCompat>
+            </LinearLayout>
+
+<!--            Email Notification-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/email_vector">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email Notification"
+                        android:textColor="#D3D3D3"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="16dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Receive updates via email"
+                        android:textColor="#D3D3D3"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="16dp">
+                    </TextView>
+                </LinearLayout>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true">
+                </androidx.appcompat.widget.SwitchCompat>
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
