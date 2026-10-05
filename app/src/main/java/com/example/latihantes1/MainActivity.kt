@@ -21,7 +21,24 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        val _email = findViewById<LinearLayout>(R.id.email)
+        _email.setOnClickListener {
+            val _sendIntent = Intent().apply {
+                data = Uri.parse("mailto:sarah@school.edu")
+            }
+            startActivity(_sendIntent)
+        }
+
+        val _telephone = findViewById<LinearLayout>(R.id.telephone)
+        _telephone.setOnClickListener {
+            val _sendIntent = Intent().apply {
+                data = Uri.parse("tel:+15559876547")
+            }
+            startActivity(_sendIntent)
+        }
+
 
     }
+
 
 }
