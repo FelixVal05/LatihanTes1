@@ -37,8 +37,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(_sendIntent)
         }
 
+        val _role = findViewById<LinearLayout>(R.id.role)
+        _role.setOnClickListener {
+            val intent = Intent(this@MainActivity, MainActivity2::class.java)
+            startActivity(intent)
+        }
 
+        val data = intent.getStringExtra(dataTerima)
+        val _roleName = findViewById<TextView>(R.id.roleName)
+        _roleName.text = data?:"Admin"
     }
 
-
+    companion object{
+        const val dataTerima = "role baru"
+    }
 }
